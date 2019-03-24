@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="graphql-parser" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GraphApi.Client.Models\GraphApi.Client.Models.csproj" />
+    <ProjectReference Include="..\GraphApi.EFCore\GraphApi.EFCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="GraphQL">
+      <HintPath>..\lib\GraphQL.dll</HintPath>
+    </Reference>
+    <Reference Include="GraphQL.SchemaGenerator">
+      <HintPath>..\lib\GraphQL.SchemaGenerator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

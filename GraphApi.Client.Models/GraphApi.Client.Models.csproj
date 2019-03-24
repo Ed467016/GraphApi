@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GraphApi.EFCore\GraphApi.EFCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="GraphQL">
+      <HintPath>..\lib\GraphQL.dll</HintPath>
+    </Reference>
+    <Reference Include="GraphQL.SchemaGenerator">
+      <HintPath>..\lib\GraphQL.SchemaGenerator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
