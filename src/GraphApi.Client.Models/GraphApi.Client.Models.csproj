@@ -13,10 +13,10 @@
 
   <ItemGroup>
     <Reference Include="GraphQL">
-      <HintPath>..\lib\GraphQL.dll</HintPath>
+      <HintPath>..\..\lib\GraphQL.dll</HintPath>
     </Reference>
     <Reference Include="GraphQL.SchemaGenerator">
-      <HintPath>..\lib\GraphQL.SchemaGenerator.dll</HintPath>
+      <HintPath>..\..\lib\GraphQL.SchemaGenerator.dll</HintPath>
     </Reference>
   </ItemGroup>
 
